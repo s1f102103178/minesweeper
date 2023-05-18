@@ -3,6 +3,7 @@ import styles from './index.module.css';
 const Home = () => {
   return (
     <div className={styles.container}>
+      <div className={styles.hoge} />
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
