@@ -30,8 +30,11 @@ const Home = () => {
     row.some((input, x) => input === 1 && bombMap[y][x] === 1)
   );
   const board: number[][] = [];
-
-  <div className={styles.container} />;
+  return (
+    <div className={styles.board}>
+      <div className={styles.board2} />
+    </div>
+  );
 };
 
 export default Home;

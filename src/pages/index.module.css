@@ -121,3 +121,27 @@
   height: 30px;
   background: url('~/assets/images/icons.png');
 }
+
+.cell {
+  border-color: black;
+  width: 80px;
+  height: 80px;
+  border-style: solid;
+  background-color: green;
+  border-width: 0.5px;
+  float: left;
+}
+
+.board {
+  height: 640px;
+  width: 640px;
+  background: grey;
+  margin: auto;
+}
+
+.board2 {
+  width: 400px;
+  height: 500px;
+  background: red;
+  left: 100px;
+}
