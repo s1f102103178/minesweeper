@@ -116,6 +116,13 @@
   margin-left: 0.5rem;
 }
 
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
 .board {
   display: grid;
   grid-template-columns: repeat(9, 40px);
