@@ -33,16 +33,14 @@ const Home = () => {
   const board: number[][] = [];
 
   return (
-    <div className={styles.App}>
-      <div className={styles.board}>
-        {userInputs.map((row, y) =>
-          row.map((input, x) => (
-            <div key={`cell-${x}-${y}`} className={styles.cell} onClick={() => handleClick(x, y)}>
-              {input}
-            </div>
-          ))
-        )}
-      </div>
+    <div className={styles.board}>
+      {userInputs.map((row, y) =>
+        row.map((input, x) => (
+          <div key={`cell-${x}-${y}`} className={styles.cell} onClick={() => handleClick(x, y)}>
+            {input}
+          </div>
+        ))
+      )}
     </div>
   );
 };
