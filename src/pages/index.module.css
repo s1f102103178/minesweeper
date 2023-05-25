@@ -132,16 +132,27 @@
   float: left;
 }
 
-.board {
-  height: 640px;
-  width: 640px;
-  background: grey;
-  margin: auto;
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-.board2 {
-  width: 400px;
-  height: 500px;
-  background: red;
-  left: 100px;
+.board {
+  display: grid;
+  grid-template-columns: repeat(9, 40px);
+  grid-template-rows: repeat(9, 40px);
+  grid-gap: 1px;
+  background-color: #000;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #ccc;
+  cursor: pointer;
 }

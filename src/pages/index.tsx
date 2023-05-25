@@ -31,9 +31,18 @@ const Home = () => {
     row.some((input, x) => input === 1 && bombMap[y][x] === 1)
   );
   const board: number[][] = [];
+
   return (
-    <div className={styles.board}>
-      <div className={styles.board2} />
+    <div className={styles.App}>
+      <div className={styles.board}>
+        {userInputs.map((row, y) =>
+          row.map((input, x) => (
+            <div key={`cell-${x}-${y}`} className={styles.cell} onClick={() => handleClick(x, y)}>
+              {input}
+            </div>
+          ))
+        )}
+      </div>
     </div>
   );
 };
